@@ -29,7 +29,7 @@
         const password=form.password.value;
 
         try{
-            const res = await fetch('/login',{ // this can also be done usign axios
+            const res = await fetch('/login',{ 
                 method:'POST',
                 body:JSON.stringify({email,password}),
                 headers:{'Content-Type':'application/json'}
